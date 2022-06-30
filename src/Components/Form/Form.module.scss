@@ -1,0 +1,254 @@
+.root{
+    padding-top: 10vh;
+    background-color: black;
+    .howToContact{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 5vh;
+        padding-bottom: 5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .info{
+            flex: 2;
+            position: relative;
+            .infoTop{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+                padding-right: 15%;
+                div{
+                    margin: 10px 0;
+                    p{
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    h1{
+                        color: white;
+                        font-weight: bold;
+                        font-size: 32px;
+                    }
+                }
+            }
+            .infoBottom{
+                padding: 3vh 0;
+                width: 70%;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                a{
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 28px;
+                        margin-right: 1rem;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: rgba(255, 255, 255, 0.5);
+                        font-weight: 500;
+                        transition: .1s;
+                        &:hover{
+                            color: #EC1C24;
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            position: absolute;
+            width: 40%;
+            left: 0;
+            bottom: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 32px;
+            }
+        }
+        .form{
+            position: relative;
+            flex: 1;
+            display: block;
+            .littleInput,
+            .bigInput{
+                width: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background: none;
+                color: white;
+                padding: 1em;
+                margin: 15px 0;
+                outline: 0;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            .bigInput{
+                min-height: 150px;
+                resize: none;
+            }
+            .submitInput{
+                width: 100%;
+                padding: 1em;
+                border: 1px solid rgba(236, 28, 36, 0.4);
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(236, 28, 36, 0.5);
+                background: none;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    color: white;
+                    background: rgba(236, 28, 36, 0.5);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .root{
+        .howToContact{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 1320px){
+    .root{
+        .howToContact{
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .root{
+        .howToContact{
+            .info{
+                .infoTop{
+                    padding-right: 10%;
+                    div{
+                        h1{
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .root{
+        padding-bottom: 10vh;
+        .howToContact{
+            flex-direction: column;
+            .icons{
+                bottom: 0;
+            }
+            .info{
+                width: 100%;
+                .infoTop{
+                    padding-right: 0;
+                }
+                .infoBottom{
+                    margin: 0 auto;
+                    padding: 1.5rem 0;
+                    border: none;
+                    width: 90%;
+                    a{
+                        img{
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .form{
+                width: 100%;
+            }
+            .icons{
+                width: 70%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px){
+    .root{
+        .howToContact{
+            .info{
+                .infoTop{
+                    div{
+                        h1{
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .infoBottom{
+                    width: 100%;
+                    padding: 1rem 0;
+                    a{
+                        img{
+                            margin-right: 0.5rem;
+                            width: 25px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .icons{
+                width: 100%;
+                left: 0;
+                transform: none;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    .root{
+        .howToContact{
+            .info{
+                .infoBottom{
+                    padding: 0.5rem 0;
+                    a{
+                        margin: 10px;
+                    }
+                }
+                .infoTop{
+                    flex-direction: column;
+                }
+            }
+            .form{
+                .littleInput,
+                .bigInput{
+                    padding: 0.7em;
+                    font-size: 13px;
+                }
+                .submitInput{
+                    padding: 0.7em;
+                    font-size: 15px;
+                }
+            }
+            .icons{
+                img{
+                    width: 27px;
+                }
+            }
+        }
+    }
+}

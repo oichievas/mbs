@@ -1,0 +1,16 @@
+.root{
+    width: 100px;
+    height: 100px;
+    transform: scale(1.5);
+    margin: 3rem !important;
+    margin-top: 0 !important;
+    &>*{
+        font-weight: bold !important;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .root{
+        transform: scale(1.3);
+    }
+}

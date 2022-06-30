@@ -1,0 +1,43 @@
+.root{
+    background-color: white;
+    padding: 8vh 0;
+    position: relative;
+    margin: 1rem 0;
+    .title{
+        width: 30%;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .benefits{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .root{
+        .benefits{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 837px) {
+    .root{
+        .benefits{
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .root{
+        .benefits{
+            justify-content: center;
+        }
+    }
+}

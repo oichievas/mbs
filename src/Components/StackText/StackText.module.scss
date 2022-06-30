@@ -1,0 +1,37 @@
+.title{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 52px;
+    font-weight: 300;
+    padding-top: 10vh;
+}
+
+@media screen and (max-width: 1064px){
+    .title{
+        font-size: 42px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .title{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 555px){
+    .title{
+        font-size: 25px;
+        width: 90%;
+        padding-top: 7vh;
+        margin-bottom: 10vh;
+    }
+}
+@media screen and (max-width: 400px){
+    .title{
+        font-size: 20px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,277 @@
+.root{
+    padding: 3vh 0;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    .pricesBlock{
+        margin: 3rem 0;
+        position: relative;
+        width: 100%;
+        padding: 5%;
+        background: #26261F;
+        display: flex;
+        justify-content: space-between;
+        .priceLine{
+            width: 30%;
+            position: relative;
+            &>*{
+                color: white;
+            }
+            .priceTitle{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .pricePrice{
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .priceDescription{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .priceList{
+                padding-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-left: 8%;
+                li{
+                    list-style-type: disc !important;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .button{
+                width: 100%;
+                border: 1px solid white;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+                background: none;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background: white;
+                    color: #26261F;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .root{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .root{
+        .pricesBlock{
+            .priceLine{
+                .priceTitle{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1150px){
+    .root{
+        .pricesBlock{
+            .priceLine{
+                width: 31%;
+                .priceTitle{
+                    font-size: 28px;
+                }
+                .pricePrice{
+                    font-size: 18px;
+                }
+                .priceList{
+                    padding-top: 0.3rem;
+                    padding-left: 6%;
+                    li{
+                        font-size: 15px;
+                    }
+                }
+                .button{
+                    font-size: 16px;
+                    padding: 8px 0;
+                    border-color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .root{
+        width: 95%;
+        .pricesBlock{
+            margin: 2rem 0;
+            padding: 3% 4%;
+            .priceLine{
+                .priceTitle{
+                    font-size: 26px;
+                }
+                .priceDescription{
+                    font-size: 14px;
+                }
+                .pricePrice{
+                    font-size: 16px;
+                }
+                .priceList{
+                    padding-top: 0.3rem;
+                    padding-left: 6%;
+                    li{
+                        font-size: 14px;
+                    }
+                }
+                .button{
+                    font-size: 15px;
+                    padding: 6px 0;
+                    border-color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .root{
+        .pricesBlock{
+            margin: 2rem 0;
+            .priceLine{
+                .priceTitle{
+                    font-size: 24px;
+                }
+                .priceDescription{
+                    font-size: 13px;
+                }
+                .pricePrice{
+                    font-size: 15px;
+                }
+                .priceList{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+                .button{
+                    font-size: 14px;
+                    padding: 5px 0;
+                    border-color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .root{
+        .pricesBlock{
+            margin-top: 0;
+            .priceLine{
+                margin: 0 auto;
+                width: 50%;
+                text-align: center;
+                .priceTitle{
+                    font-size: 28px;
+                }
+                .priceDescription{
+                    font-size: 17px;
+                }
+                .pricePrice{
+                    font-size: 19px;
+                }
+                .priceList{
+                    text-align: left;
+                    li{
+                        font-size: 17px;
+                    }
+                }
+                .button{
+                    font-size: 18px;
+                    padding: 5px 0;
+                    border-color: #ccc;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 610px){
+    .root{
+        .pricesBlock{
+            .priceLine{
+                .priceTitle{
+                    font-size: 26px;
+                }
+                .priceDescription{
+                    font-size: 15px;
+                }
+                .pricePrice{
+                    font-size: 17px;
+                }
+                .priceList{
+                    li{
+                        font-size: 15px;
+                    }
+                }
+                .button{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 545px){
+    .root{
+        .pricesBlock{
+            .priceLine{
+                width: 60%;
+                .priceTitle{
+                    font-size: 25px;
+                }
+                .priceDescription{
+                    font-size: 14px;
+                }
+                .pricePrice{
+                    font-size: 16px;
+                }
+                .priceList{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+                .button{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px){
+    .root{
+        .pricesBlock{
+            .priceLine{
+                width: 90%;
+                .priceTitle{
+                    font-size: 24px;
+                }
+                .priceDescription{
+                    font-size: 13px;
+                }
+                .pricePrice{
+                    font-size: 15px;
+                }
+                .priceList{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+                .button{
+                    font-size: 14px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,419 @@
+.tech{
+    background-color: black;
+    padding-top: 15vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20vh;
+    ul{
+        width: 60%;
+        position: relative;
+        padding-top: 5vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            display: flex;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                color: white;
+            }
+            &:hover > .checkbox{
+                background-color: #2e1919;
+            }
+            .checkbox{
+                display: inline-block;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background-color: #281D1D;
+                border-radius: 3px;
+                margin-right: 10px;
+                .checkCircle{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 8px;
+                    background: #C4C4C4;
+                }
+            }
+        }
+    }
+
+    .grid{
+        width: 80%;
+        padding-top: 5vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 12vh);
+        grid-gap: 1px;
+        .design, .edit, .video, .frontend, .front, .backend, .marketing{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.5s;
+            p{
+                font-size: 10px;
+                color: rgba(255, 255, 255, 0.35);
+                padding-top: 10px;
+                text-align: center;
+            }
+        }
+        .design{
+            background: #281D1D !important;
+        }
+        .edit{
+            background: #3D1C1C;
+        }
+        .video{
+            background: #3D1111;
+        }
+        .frontend{
+            background: #22281D;
+        }
+        .front{
+            background: #263D24;
+        }
+        .backend{
+            background: #0D303A;
+        }
+        .marketing{
+            background: #4B0249;
+        }
+
+        // seperated
+
+        #design6, #design7, #design8, #design9, #design10{
+            grid-row: 2 / 3;
+        }
+
+        #edit7, #edit8, #edit9, #edit10, #edit11, #edit12{
+            grid-row: 2 / 3;
+        }
+
+        #video7, #video8, #video9, #video10, #video11{
+            grid-row: 3 / 4;
+        }
+        #video7, #video12{
+            grid-column: 10 / 11;
+        }
+        #video8, #video13{
+            grid-column: 11 / 12;
+        }
+        #video9, #video14{
+            grid-column: 12 / 13;
+        }
+        #video10, #video15{
+            grid-column: 13 / 14;
+        }
+        #video11, #video16{
+            grid-column: 14 / 15;
+        }
+        #video12, #video13, #video14, #video15, #video16{
+            grid-row: 4 / 5;
+        }
+
+
+        #frontend7, #frontend8, #frontend9, #frontend10, #frontend11, #frontend12{
+            grid-row: 4 / 5;
+        }
+
+
+        #front1, #front2, #front3, #front4, #front5, #front6{
+            grid-row: 5 / 6;
+        }
+        #front7, #front8, #front9, #front10, #front11, #front12{
+            grid-row: 6 / 7;
+        }
+
+        #backend10, #backend11, #backend12{
+            grid-row: 6 / 7;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .tech{
+        ul{
+            width: 85%;
+        }
+        .grid{
+            width: 85%;
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .tech{
+        ul{
+            li{
+                .checkbox{
+                    margin-right: 3px;
+                }
+            }
+        }
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                position: relative;
+                img{
+                    width: 50%;
+                }
+                .specialImg{
+                    width: 30%;
+                }
+                p{
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1060px){
+    .tech{
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1032px){
+    .tech{
+        ul{
+            li{
+                font-size: 14px;
+                .checkbox{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 923px){
+    .tech{
+        ul{
+            padding-top: 2vh;
+            li{
+                .checkbox{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 888px){
+    .tech{
+        ul{
+            flex-wrap: wrap;
+            display: block;
+            text-align: center;
+            li{
+                display: inline-block;
+                margin: 5px 10px;
+                .checkbox{
+                    transform: translateY(3px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .tech{
+        .grid{
+            grid-template-columns: repeat(11, 1fr);
+            .video{
+                display: none;
+            }
+            #backend10{
+                grid-row: 4 / 5;
+            }
+            #backend11, #backend12{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px){
+    .tech{
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                p{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px) and (max-height: 430px){
+    .tech{
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                p{
+                    line-height: 1;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 590px) and (max-height: 400px){
+    .tech{
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 590px) and (max-height: 350px){
+    .tech{
+        .grid{
+            grid-template-rows: repeat(6, 14vh);
+        }
+    }
+}
+@media screen and (max-width: 590px) and (max-height: 300px){
+    .tech{
+        .grid{
+            grid-template-rows: repeat(6, 15vh);
+        }
+    }
+}
+@media screen and (max-width: 566px){
+    .tech{
+        ul{
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 510px){
+    .tech{
+        .grid{
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(10, 8vh);
+            .video{
+                display: none;
+            }
+            #edit1, #edit2, #edit3, #edit4, #edit5, #edit6{
+                grid-row: 1 / 2;
+            }
+            #edit7, #edit8, #edit9, #edit10, #edit11, #edit12{
+                grid-row: 2 / 3;
+            }
+            #marketing1, #marketing2, #marketing3, #marketing4{
+                grid-row: 9 / 10;
+            }
+            #marketing5, #marketing6, #marketing7, #marketing8, #marketing9, #marketing10{
+                grid-row: 10 / 11;
+            }
+            #front1, #front2, #front3, #front4, #front5, #front6{
+                grid-row: 8 / 9;
+            }
+            #front7, #front8{
+                grid-row: 9 / 10;
+            }
+            #front9, #front10, #front11, #front12{
+                display: none;
+            }
+            #edit1, #edit2, #edit3, #edit4, #edit5, #edit6{
+                grid-row: 7 / 8;
+            }
+            #edit7, #edit8, #edit9{
+                grid-row: 6 / 7;
+            }
+            #edit10, #edit11, #edit12{
+                display: none;
+            }
+            #backend1, #backend2{
+                grid-row: 4 / 5;
+            }
+            #backend3, #backend4, #backend5, #backend6, #backend7, #backend8{
+                grid-row: 5 / 6;
+            }
+            #backend9, #backend10, #backend11{
+                grid-row: 6 / 7;
+                display: flex;
+            }
+            #backend9{
+                grid-column: 1 / 2;
+            }
+            #backend10{
+                grid-column: 2 / 3;
+            }
+            #backend11{
+                grid-column: 3 / 4;
+            }
+            #frontend1, #frontend2, #frontend3, #frontend4, #frontend5, #frontend6{
+                grid-row: 3 / 4;
+            }
+            #frontend7, #frontend8, #frontend9, #frontend10{
+                grid-row: 4 / 5;
+            }
+            #frontend11, #frontend12{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .tech{
+        .grid{
+            .design, .edit, .video, .frontend, .front, .backend, .marketing{
+                p{
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .tech{
+        ul{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width: 355px){
+    .tech{
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 339px){
+    .tech{
+        ul{
+            width: 99%;
+            li{
+                margin: 5px 7px;
+            }
+        }
+    }
+}

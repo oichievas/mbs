@@ -1,0 +1,20 @@
+.root{
+    .cases{
+        position: relative;
+        background-color: black;
+        padding-bottom: 8rem;
+        padding-top: 8vh;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .root .cases{
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .root .cases{
+        padding-bottom: 4rem;
+    }
+}

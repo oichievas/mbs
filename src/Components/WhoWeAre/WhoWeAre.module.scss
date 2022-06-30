@@ -1,0 +1,157 @@
+.who{
+    background-color: black;
+    padding-top: 8vh;
+    .whoWeAre{
+        font-size: 100px;
+        text-align: center;
+        color: white;
+    }
+    .ourMissionIs{
+        font-size: 50px;
+        line-height: 1.2;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .weDo{
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        .weDoBlock{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 2rem;
+            div{
+                margin: 10px 0;
+                p{
+                    color: black;
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px){
+    .who{
+        .whoWeAre{
+            font-size: 90px;
+        }
+        .ourMissionIs{
+            width: 85%;
+            font-size: 40px;
+        }
+        .weDo{
+            width: 85%;
+            .weDoBlock div p{
+                font-size: 23px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1075px){
+    .who{
+        .whoWeAre{
+            font-size: 75px;
+        }
+        .ourMissionIs{
+            font-size: 30px;
+        }
+        .weDo{
+            .weDoBlock div p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 837px){
+    .who{
+        .ourMissionIs{
+            width: 90%;
+        }
+        .weDo{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 764px){
+    .who{
+        .whoWeAre{
+            font-size: 60px;
+        }
+        .ourMissionIs{
+            font-size: 24px;
+        }
+        .weDo{
+            padding: 1.5rem 0;
+            .weDoBlock div p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .who{
+        .weDo{
+            .weDoBlock{
+                flex-direction: column;
+                padding-top: 0;
+                div{
+                    margin: 0;
+                    p{
+                        margin: 1rem 0;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px){
+    .who{
+        .whoWeAre{
+            font-size: 50px;
+        }
+        .ourMissionIs{
+            font-size: 20px;
+        }
+        .weDo{
+            .weDoBlock{
+                div{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 444px){
+    .who{
+        .whoWeAre{
+            font-size: 40px;
+        }
+        .ourMissionIs{
+            font-size: 18px;
+        }
+        .weDo{
+            .weDoBlock{
+                div{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

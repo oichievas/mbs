@@ -1,0 +1,53 @@
+.root{
+    width: 90%;
+    margin: 3vh 0;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        h1{
+            font-size: 24px;
+            color: white;
+            margin: 10px 0;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+            margin: 10px 0;
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            img{
+                width: 20px;
+            }
+        }
+    }
+    p{
+        padding-top: 1vh;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .root{
+        .title{
+            h1{
+                margin: 7px 0;
+                font-size: 22px;
+            }
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+}
