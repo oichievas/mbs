@@ -81,7 +81,7 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className={cls.navRight}>
-                    <div className={cls.lang} id={isOpenLang ? cls.langOpen : null}>
+                    {/* <div className={cls.lang} id={isOpenLang ? cls.langOpen : null}>
                         <div className={cls.langTop}>
                             <button>
                                 <img 
@@ -103,9 +103,9 @@ const Nav = () => {
                             <li><a href="#">Deutsch</a></li>
                             <li><a href="#">Deutsch</a></li>
                         </ol>
-                    </div>
+                    </div> */}
                     <div className={cls.number}>+996 773 82 29 35</div>
-                    <div className={cls.btnDiv}><button className={cls.contactBtn}>Contact</button></div>
+                    <div className={cls.btnDiv}><button className={cls.contactBtn} ><a style={{"color": "white !important"}} href='https://wa.me/996773822935'>Contact with us</a></button></div>
                 </div>
                 <button className={cls.burgerBtn} onClick={() => setActiveBurger(!activeBurger)}>
                     <div className={cls.bar} id={cls.bar1}></div>

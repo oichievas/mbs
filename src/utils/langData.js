@@ -96,7 +96,7 @@ export const enLangData = {
         longBtn: "See all works"
     },
     header: {
-        bottomText: "What we do",
+        // bottomText: "What we do",
         longBtn: "Get a consultation",
         orderBtn: "Order a project now",
         dreamsText: "We make your dream come true"
