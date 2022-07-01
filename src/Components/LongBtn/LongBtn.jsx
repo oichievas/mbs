@@ -6,7 +6,10 @@ const LongBtn = ({content, color}) => {
             className={cls.root}
             style={{color}}
         >
-            {content}
+            <a href="https://wa.me/996773822935">
+             {content}
+            </a>
+           
         </button>
     )
 }

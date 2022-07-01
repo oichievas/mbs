@@ -8,7 +8,10 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
-
+a {
+    color: inherit;
+    text-decoration: none;
+  }
 .swiper-button-next{
     color: white !important;
 }
