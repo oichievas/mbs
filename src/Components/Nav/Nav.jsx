@@ -104,7 +104,7 @@ const Nav = () => {
                             <li><a href="#">Deutsch</a></li>
                         </ol>
                     </div>
-                    <div className={cls.number}>+996 703 00 00 00</div>
+                    <div className={cls.number}>+996 773 82 29 35</div>
                     <div className={cls.btnDiv}><button className={cls.contactBtn}>Contact</button></div>
                 </div>
                 <button className={cls.burgerBtn} onClick={() => setActiveBurger(!activeBurger)}>
